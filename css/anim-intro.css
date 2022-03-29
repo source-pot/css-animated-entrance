@@ -25,6 +25,10 @@
     margin: 0;
 }
 
+.page--preview-active footer {
+    display: none;
+}
+
 .page--preview-active .heading--page-title {
     /* in the preview mode the page header fills half the screen vertically */
     min-height: 50vh;

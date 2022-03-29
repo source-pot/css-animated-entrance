@@ -75,6 +75,11 @@ figcaption {
     margin: 1rem;
 }
 
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
 /* these elements have different font sizes thanks to browser defaults */
 td, button {
     font-size: 1rem;
