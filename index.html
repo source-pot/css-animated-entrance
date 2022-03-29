@@ -20,7 +20,7 @@
                 <h2 class="section__heading">Welcome to my corner* of the Internet!</h2>
                 <p class="text--small">*I know the Internet doesn't <em>really</em> have corners</p>
                 <p>
-                    Hi, my name's Rob and I've spent many years learning out how to program
+                    Hi, my name's Rob and I've spent many years learning about how to program
                     on the web.  In my toolkit I have many server-side languages like PHP, Perl,
                     and Ruby, many front-end languages like Javascript and it's friends: Typescript
                     and CoffeeScript, and many compiled languages like C++, Java, and Rust.
@@ -41,8 +41,8 @@
                 </p>
                 <p>
                     <a href="https://github.com/source-pot/animated-entrance" target="_blank">All
-                    the code for this website is on Github</a>.  I'll be updating the readme file in due
-                    course with some extra notes on what to look out for.
+                    the code for this website is on Github</a>.  I'll be updating the readme file in
+                    due course with some extra notes on what to look out for.
                 </p>
                 <p>
                     It's neither big nor clever, but it entertained me to create it. To trigger the
@@ -54,6 +54,39 @@
                     scrollbar visible when in "preview mode".  I couldn't figure out a way to not
                     have the content "jump" to the left when the scrollbar appears as the main site
                     content appears.
+                </p>
+            </section>
+            <section class="main-content__section">
+                <h2 class="section__heading">CSS classes and BEM</h2>
+                <blockquote>
+                    BEM - Block Element Modifier - is a methodology that helps you to create
+                    reusable components and code sharing in front-end development
+                </blockquote>
+                <figcaption>
+                    - The BEM website,
+                    <cite><a href="http://getbem.com/" target="_blank">http://getbem.com/</a></cite>
+                </figcaption>
+                <p>
+                    So when trying out this new website look, I wondered if there was an accepted
+                    way to name classes and IDs of elements to target them with CSS.  I found BEM.
+                </p>
+                <p>
+                    As noted above, all the code is on the
+                    <a href="https://github.com/source-pot/animated-entrance" target="_blank">Github
+                    </a> so you can take a look there, or just inspect this page.
+                </p>
+                <p>
+                    While I'm not sure if I'm totally onboard with BEM, I've tried it out here and
+                    I can see some clear benefits.  Not having to figure out specificity of elements
+                    when applying styles is a big win, it allows the CSS to be split up then
+                    recompiled later without fear of the the styles being in the wrong order.
+                </p>
+                <p>
+                    I have applied my own little spin on BEM on this page: I've fallen back on the
+                    old "global reset" and "text modifiers" for a few things (see
+                    <code>.text--small</code>).  I also do prefer to have a base set of styles for
+                    the page then build upon that with classes, so I do style specific tags still.
+                    It's definitely an idea for naming that feels good to me.
                 </p>
             </section>
         </main>
