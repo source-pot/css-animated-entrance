@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/css/anim-intro.css" />
+        <title>Rob-watson.uk</title>
+    </head>
+    <body class="page--preview-active">
+
+        <h1 class="heading--page-title">rob-watson.uk</h1>
+        <aside class="welcome-message">
+            <p class="welcome-message__text">Software developer portfolio website</p>
+            <p><a href="#" class="welcome-message__enter-button">Enter...</a></p>
+        </aside>
+
+        <main class="main-content">
+            <section class="main-content__section">
+                <h2 class="section__heading">Welcome to my corner* of the Internet!</h2>
+                <p class="text--small">*I know the Internet doesn't <em>really</em> have corners</p>
+                <p>
+                    Hi, my name's Rob and I've spent many years learning out how to program
+                    on the web.  In my toolkit I have many server-side languages like PHP, Perl,
+                    and Ruby, many front-end languages like Javascript and it's friends: Typescript
+                    and CoffeeScript, and many compiled languages like C++, Java, and Rust.
+                </p>
+                <p>
+                    Over time, this website will serve as an output of my playtime and somewhere
+                    I can demonstrate my craft.  I'll include snippets of code including
+                    explanations of the what and how and probably ramblings around new concepts I
+                    pick up.
+                </p>
+            </section>
+            <section class="main-content__section">
+                <h2 class="section__heading">Animated intro on this site</h2>
+                <p>
+                    You may have noticed when you arrived here that there's a little welcome message
+                    on the website before you get to this main content.  It's created in CSS with a
+                    tiny sprinkle of javascript to control it.
+                </p>
+                <p>
+                    <a href="/css/anim-intro.css" target="_blank">Here's the CSS involved
+                    in this animated intro</a> and <a href="/js/anim-intro.js" target="_blank">here's
+                    the Javascript</a>.
+                </p>
+                <p>
+                    It's neither big nor clever, but it entertained me
+                    to create it. To trigger the animation, a bit of Javascript is required to
+                    remove the "preview mode" class and add the main class:
+                    <code>document.body.classList.replace('page--preview-active', 'page')</code>
+                </p>
+                <p>
+                    The only part of this I'm not a fan of is the need to keep the vertical
+                    scrollbar visible when in "preview mode".  I couldn't figure out a way to not
+                    have the content "jump" to the left when the scrollbar appears as the main site
+                    content appears.
+                </p>
+            </section>
+        </main>
+
+        <script type="module" src="/js/anim-intro.js"></script>
+    </body>
+</html>

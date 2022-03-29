@@ -1,0 +1,64 @@
+
+.page * {
+    /*
+        we only want the animation to play when we remove the preview class from the body.
+        this applies to all child elements of the body
+    */
+    transition: all 1s ease-in-out;
+}
+
+.welcome-message {
+    /*
+        this is the "final" state of the container of the welcome message with "enter" link.
+        the opacity makes it fade out and height combined with the overflow shrinks it.
+    */
+    opacity: 0;
+    height: 0;
+    min-height: 0;
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.welcome-message * {
+    /* this is a bit anti-semantic, but nothing in the welcome message needs margin applying */
+    margin: 0;
+}
+
+.page--preview-active .heading--page-title {
+    /* in the preview mode the page header fills half the screen vertically */
+    min-height: 50vh;
+    /* the separator between the heading and the "welcome message" is actually this border */
+    border-bottom: 2rem solid var(--color2);
+    
+    font-size: 96px;
+}
+
+.page--preview-active .welcome-message {
+    /* arbitrary height used here allows the animation to zero height when we leave preview mode */
+    height: 5rem;
+
+    opacity: 1;
+}
+
+.page--preview-active .welcome-message__text {
+    padding-top: 1rem;
+}
+
+.page--preview-active .main-content {
+    /*
+        the main content for the site appears in this container element. it's important to set 
+        opacity: 1 in the non-preview-mode element, otherwise the animation won't play
+    */
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/* media query to make the main title of the page fit better on a mobile screen */
+@media screen and (max-width:500px) {
+    .page--preview-active .heading--page-title {
+        font-size: 64px;
+    }
+}
