@@ -131,8 +131,8 @@ code,pre {
 }
 
 
-/* media query to make the main body of the page fit better on a mobile screen */
-@media screen and (max-width:500px) {
+/* media query to make the main body of the page fit better on a smaller screen */
+@media screen and (max-width:1000px) {
     .main-content {
         padding: 1rem;
     }
